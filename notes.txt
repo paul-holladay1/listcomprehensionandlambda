@@ -1,0 +1,23 @@
+[expression/transformation     iteration     condition]
+
+do not have to have expression or condition
+iteration is required
+
+Example without list comprehension:
+
+list1 = [10,20,30,40,50]
+list2 = []
+
+for x in list1:
+    if x > 20:
+        x *= x
+        list2.append(x)
+
+Example with list comprehension:
+
+list1 = [10,20,30,40,50]
+list2 = []
+
+list2 = [x*x for x in list1 if x>20]
+
+List comprehension will always produce a list
