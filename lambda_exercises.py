@@ -7,7 +7,15 @@ Even numbers from the said list:
 Odd numbers from the said list:
 [1, 3, 5, 7, 9]
 '''
-
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print('Original list of integers:')
+print(nums)
+print('Even numbers from the said list:')
+even_nums = list(filter(lambda x: x % 2 ==0, nums))
+print(even_nums)
+print('Odd numbers from the said list:')
+odd_nums = list(filter(lambda x: x % 2 !=0, nums))
+print(odd_nums)
 
 
 
@@ -17,8 +25,8 @@ find which days of the week have exactly 6 characters.
 '''
 
 weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-
-
+six_characters = list(filter(lambda num:len[num]==6, weekdays))
+print(six_characters)
 
 
 
